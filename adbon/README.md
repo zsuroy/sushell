@@ -9,7 +9,7 @@
 # 🍁 使用说明
 启动： `./adbon start 5555 listen root`  
 > 启动端口号为5555的 WIFI ADB 服务，同时监听ipv6端口转发  
-关闭： `./addon stop`
+关闭： `./addon stop 5555 0 root`
 
 # V1.2 2022.2.15  
 1. 新增定义端口功能
