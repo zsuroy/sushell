@@ -14,6 +14,7 @@ bin-release/
 *.apk
 
 # Suroy
+.DS_Store
 */.DS_Store
 */.bak
 
