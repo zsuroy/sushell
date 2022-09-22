@@ -45,7 +45,7 @@ vim ~/.bashrc
 
 使用说明:
 ```shell
-sh -c "$(curl -L https://raw.githubusercontent.com/zsuroy/sushell/main/tools/modem.sh)"
+sh -c "$(curl -L https://raw.githubusercontent.com/zsuroy/sushell/main/tools/modem.sh -k)"
 
 ```
 执行完毕记得重启光猫

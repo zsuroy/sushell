@@ -22,7 +22,7 @@ RESET="\033[00m" #normal
 orange='\e[38;5;166m'
 #Checking internet connection
 clear
-wget -q --spider https://suroy.cn
+wget -q --spider https://suroy.cn --no-check-certificate
 if [ "$?" -eq 0 ]; then
         echo -e $okegreen [✔]::[Internet Connection]: CONNECTED!;
         sleep 1
