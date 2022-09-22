@@ -6,6 +6,7 @@
 # site：suroy.cn
 # date: 2022.2.22
 # slogan：学的不仅是技术，更是梦想！
+# tips: 在 vim 中文件格式转换 :set fileformat=unix
 #--------------------------------------------
 
 sleeptime=30 # 休眠时间(S)
