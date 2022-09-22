@@ -34,3 +34,18 @@ vim ~/.bashrc
 
 注意事项：
 使用时文件名不能以对应进程关键字出现，否则会产生误判
+
+## 新增光猫自动配置IPV6防火墙规则
+
+> 配置开机自动开放进出IPV6所有端口
+> 2022.9.22
+> file: `/sushell/tools/modem.sh`
+
+测试设备：`中国移动 H2-2` / 几乎所有光猫均可使用
+
+使用说明:
+```shell
+sh -c "$(curl -L https://raw.githubusercontent.com/zsuroy/sushell/main/tools/modem.sh)"
+
+```
+执行完毕记得重启光猫
