@@ -47,5 +47,35 @@ vim ~/.bashrc
 ```shell
 sh -c "$(curl -L https://raw.githubusercontent.com/zsuroy/sushell/main/tools/modem.sh -k)"
 
+
 ```
 执行完毕记得重启光猫
+
+
+## 新增关闭光猫IPV6防火墙一键脚本
+
+> 编写缘由：光猫开机会自动恢复默认配置，开启网络防火墙，若不进一步破解无法保存配置  
+> 使用说明：用NAS、或者服务器上定期执行本脚本可以实现关闭防火墙（一般来说建议设置每次光猫重启后运行）  
+> 2022.9.23 
+
+测试设备：光猫`中国移动H2-2` 脚本运行平台`Termux`
+
+注：运行之后不需要重启光猫，重启后需要再次运行本脚本。
+
+命令：
+
+```shell
+# 单次运行
+bash -c "$(curl -L https://raw.githubusercontent.com/zsuroy/sushell/main/tools/mReIP6Wall.sh -k)"
+
+# 或者
+cd ~
+git clone https://github.com/zsuroy/sushell
+chmod 755 ~/sushell/tools/mReIP6Wall.sh
+
+# 加入定时任务
+crontab -e
+# 追加-每天23:30执行
+30 23 * * * ~/sushell/tools/mReIP6Wall.sh
+
+```
